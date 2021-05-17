@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.img-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(0, 0, 0, 0.8);
+}
+
+.img-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.section-title {
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+section{
+	scroll-margin-top: 80px;
+}
+
+.img-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	color: #ddd;
+}
+
+.img-text span {
+	text-transform: uppercase;
+	color: #09f;
+}
+/* nawigacja */
+nav {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+	text-align: center;
+	z-index: 10;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	margin-right: 10px;
+	padding: 0 -30px;
+	background: none;
+	border: none;
+	line-height: 60px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.nav-items {
+	display: none;
+}
+
+/*header*/
+
+header {
+	position: relative;
+	height: 330px;
+	background-image: url('../img/img-small.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+main {
+	margin: 60px 0;
+}
+
+/* o nas */
+.about-us-info {
+	margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+/* produkty */
+
+.products {
+	margin: 60px auto;
+}
+
+.products h3 {
+	text-transform: uppercase;
+	transition: 2s;
+}
+
+.product {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+/* .product h3{
+	transition: 2s;
+} */
+.product:hover h3 {
+	transform: scale(1.5);
+}
+
+.first-product {
+	background-image: url('../img/dzieci.jpg');
+}
+.second-product {
+	background-image: url('../img/klawiatura.jpg');
+}
+.third-product {
+	background-image: url('../img/kobieta.jpg');
+}
+.fourth-product {
+	background-image: url('../img/stacja_robocza.jpg');
+}
+
+/* tablet */
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+	.nav-items a {
+		padding: 0 30px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #333;
+		transition: color 0.3s;
+	}
+
+	.nav-items a:hover {
+		color: blue;
+	}
+	header {
+		height: 400px;
+		background-image: url('../img/img-big.jpg');
+	}
+
+	.img-text h1 {
+		font-size: 36px;
+	}
+	.img-text p {
+		font-size: 18px;
+	}
+
+	.products h3 {
+		font-size: 24px;
+	}
+}
+
+/* kontakt */
+.contact {
+	text-align: center;
+}
+.contact h3 {
+	margin: 20px 0 5px;
+	text-transform: uppercase;
+}
+
+footer {
+	padding: 30px 10px;
+	background-color: #ddd;
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	.product {
+		display: inline-block;
+		width: 45%;
+	}
+	.products-box {
+		font-size: 0;
+	}
+	.section-title {
+		font-size: 30px;
+	}
+}
+@media (min-width: 1200px) {
+	.img-text h1 {
+		font-size: 42px;
+	}
+	.img-text p {
+		font-size: 20px;
+	}
+}
