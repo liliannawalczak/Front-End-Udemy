@@ -1,0 +1,57 @@
+@import './reset';
+
+$color-h: red;
+$even: pink;
+$odd: rgb(255, 217, 146);
+
+@mixin mixin{
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+    background-color: lime;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+    color: $color-h;
+	font-size: 3rem;
+}
+
+h2 {
+    color: $color-h;
+	font-size: 2.4rem;
+}
+
+h3{
+    color: $color-h;
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+section{
+    height: 25vh;
+    text-align: center;
+}
+
+.even{
+    background-color: $even;
+}
+.odd{
+    background-color: $odd;
+}
+
+.circle{
+    @include mixin
+}

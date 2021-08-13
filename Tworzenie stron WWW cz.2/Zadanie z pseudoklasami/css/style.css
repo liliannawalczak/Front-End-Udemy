@@ -1,0 +1,41 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 50px;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
+}
+
+li:nth-of-type(even) {
+  color: lime;
+}
+
+span:first-of-type {
+  color: gold;
+}
+
+.test p:first-child {
+  color: tomato;
+}
+
+.test p:last-child {
+  color: tomato;
+}
+
+.title {
+  font-weight: bold;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: purple;
+}
+/*# sourceMappingURL=style.css.map */
